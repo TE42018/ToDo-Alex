@@ -1,5 +1,4 @@
 <img (click)="toggleVisible()" class="clickable" src="../assets/plus-badge.svg" alt="add" width="40vh">
-<img class="clickable" src="../assets/edit-badge.svg" alt="add" width="40vh">
 
 <div class="wrapper" *ngIf="visible">
 
@@ -15,6 +14,6 @@
       <textarea name="description" cols="40" rows="13" placeholder="Description" (change)="onDescriptionChange($event)"></textarea>
       <input (click)="onSubmit($event)" type="submit" value="Add task">
     </form>
-    <img src="../assets/delete-button.svg" alt="cancel" class="clickable cancel-button" (click)="onCancel()">
+    <img (click)="onCancel()" src="../assets/delete-button.svg" alt="cancel" class="clickable cancel-button">
   </div>
 </div>

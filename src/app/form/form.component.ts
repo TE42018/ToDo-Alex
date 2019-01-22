@@ -34,6 +34,8 @@ export class FormComponent implements OnInit {
     this.visible = !this.visible;
   }
 
+  
+
   onTitleChange(event){
     console.log("New title: " + event.target.value);
     this.title = event.target.value;

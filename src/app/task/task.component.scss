@@ -1,0 +1,39 @@
+.task-card{
+    width: calc(400px / 1.2);
+    height: calc(500px / 1.2);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: calc(1em + 1.5vw);;
+    background-color: rgb(155, 202, 255);
+    border: 1px black solid;
+    margin-bottom: 30px;
+    
+    .header-container{
+        display: flex;
+        width: 100%;
+        color: white;
+        border-bottom: 1px black solid;
+        background-color:  rgb(51, 105, 167);
+
+        .title-container{
+            display: flex;
+            align-items: flex-start;
+            float: left;
+            flex: 50%;
+            font-size: calc(12px + 0.8vh);
+            padding: 20px;
+        }
+        .state-container{
+            align-items: flex-start;
+            float: right;
+            flex: 50%;
+            padding: 20px;
+            font-size: calc(12px + 0.4vh);
+            text-align: right;
+        }
+    }
+    .description-container{
+        padding: 20px;
+        font-size: calc(12px + 0.8vh);
+    }
+}
+

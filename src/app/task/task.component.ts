@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Task } from '../interfaces';
 
 @Component({
   selector: 'app-task',
@@ -6,10 +7,20 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./task.component.scss']
 })
 export class TaskComponent implements OnInit {
-  
-  constructor() { }
+
+  @Input() task: Task;
+  title: string;
+  state: string;
+  description: string;
+
+  constructor() {
+    if (this.task) {
+      this.title = this.task.title;
+      this.state = this.task.state;
+      this.description = this.task.description;
+    }
+  }
 
   ngOnInit() {
   }
-
 }
