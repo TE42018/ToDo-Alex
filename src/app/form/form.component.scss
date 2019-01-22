@@ -26,7 +26,7 @@
         // height: 550px;
         display: flex;
         padding: 7px 15px 7px 15px;
-        border-radius: 5px;
+        //border-radius: 5px;
         background-color: rgb(87, 111, 245);
 
         input[type=text], select, [name=description] {
@@ -52,5 +52,11 @@
             border-radius: 4px;
             cursor: pointer;
           }
+        .cancel-button{
+            position: absolute;
+            width: 3vh;
+            right: -14px;
+            top: -14px;
+        }
     } 
 }

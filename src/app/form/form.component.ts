@@ -49,10 +49,15 @@ export class FormComponent implements OnInit {
     this.description = event.target.value;
   }
 
+  onCancel(){
+    this.toggleVisible();
+  }
+
   onSubmit(event){
     console.log("New task: " + this.title);
     this.taskService.addTask({title: this.title, state: this.state as Task["state"], description: this.description})
     this.toggleVisible();
+    
     //this.resetForm();
   }
 }

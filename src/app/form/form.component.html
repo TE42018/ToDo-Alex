@@ -15,6 +15,6 @@
       <textarea name="description" cols="40" rows="13" placeholder="Description" (change)="onDescriptionChange($event)"></textarea>
       <input (click)="onSubmit($event)" type="submit" value="Add task">
     </form>
-    <img src="../assets/delete-button.svg" alt="cancel" class="clickable">
+    <img src="../assets/delete-button.svg" alt="cancel" class="clickable cancel-button" (click)="onCancel()">
   </div>
 </div>
