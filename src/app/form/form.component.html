@@ -1,0 +1,20 @@
+<img (click)="toggleVisible()" class="clickable" src="../assets/plus-badge.svg" alt="add" width="40vh">
+<img class="clickable" src="../assets/edit-badge.svg" alt="add" width="40vh">
+
+<div class="wrapper" *ngIf="visible">
+
+  <div class="form-container">
+    <form action="javascript:void(0);" ng-submit="test()">
+      <input type="text" name="title" (change)="onTitleChange($event)" placeholder="Title">
+      <select name="state" (change)="onStateChange($event)">
+        <option value="placeholder" disabled selected>State of Task</option>
+        <option value="Todo">Todo</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Done">Done</option>
+      </select>
+      <textarea name="description" cols="40" rows="13" placeholder="Description" (change)="onDescriptionChange($event)"></textarea>
+      <input (click)="onSubmit($event)" type="submit" value="Add task">
+    </form>
+    <img src="../assets/delete-button.svg" alt="cancel" class="clickable">
+  </div>
+</div>
